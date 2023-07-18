@@ -1,0 +1,73 @@
+Brainstorming
+need to track
+user 
+email
+password
+recipe 
+ingredients
+comments
+replies
+likes and dislikes
+ingredients
+occasions
+photos
+friends list
+following
+blocked people
+public or not
+how many ingredients 
+time it takes to make recipe
+recipe rating
+how many people saw the recipe
+how many people put the recipe in cart
+
+
+Tables Idea
+keep track of user data
+sign in 
+-user id
+-user name
+-email
+-password
+-first name
+-last name
+
+recipes
+keeps track of the recipe and teh person who uploaded the recipe
+- recipe id
+- user id (one to many)
+- body text for recipe
+- picture of recipe
+- likes 
+- comments (one to many)
+- public or private recipe
+
+comments
+post comments on to peoples recipes, who commented on what recipe
+- comment id 
+- user id (one to many)
+- recipe id (one to many)
+- text body
+- likes and dislikes
+- replies
+
+comment_replies table
+keeps track of who left what reply to what comment
+-reply id
+-comment id (one to many)
+-user id (one to many)
+-reply text
+
+
+grocery
+-grocery id 
+-user id (one to one)
+-recipe id (many to one)
+-ingredients
+
+occasions
+-occasion id
+-user id (one to one)
+-recipe id (one to many)
+-description of occasion
+-photos 
